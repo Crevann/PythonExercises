@@ -1,0 +1,17 @@
+global proc CreateGreetWindow(){
+    global string $name = "nameField";
+    window;
+    columnLayout;
+        textField $name;
+        button -label "Greet me" -command "buttonGreet ";
+    showWindow;
+}
+
+global proc buttonGreet(){
+    global string $name;
+    print(("Hello " + `textField -q -tx $name` + "\n"));
+}
+
+CreateGreetWindow();
+
+

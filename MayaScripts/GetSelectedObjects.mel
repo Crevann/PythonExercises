@@ -1,0 +1,2 @@
+string $objects[] = `ls -sl`;
+print((size($objects) + " objects selected"));

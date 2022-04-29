@@ -1,0 +1,7 @@
+string $objects[] = `ls -sl`;
+string $joints[] = `ls -sl -type "joint"`;
+string $meshes[] = `ls -sl -type "mesh"`;
+string $transforms[] = `ls -sl -type "transform"`;
+print((size($joints) + " joints selected\n"));
+print((size($meshes) + " meshes selected\n"));
+print((size($transforms) + " transforms selected"));
